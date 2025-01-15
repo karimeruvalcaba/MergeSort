@@ -38,7 +38,7 @@ El programa detecta automáticamente si la entrada es manual o desde un archivo 
 #include <unistd.h>  // Para isatty y fileno
 using namespace std;
 
-void merge(vector<double>& arr, int left, int mid, int right) {
+void merge_arrays(vector<double>& arr, int left, int mid, int right) {
     int n1 = mid - left + 1;
     int n2 = right - mid;
 
@@ -74,19 +74,19 @@ void merge(vector<double>& arr, int left, int mid, int right) {
     }
 }
 
-void mergeSort(vector<double>& arr, int left, int right) {
+void merge_sort(vector<double>& arr, int left, int right) {
     if (left < right) {
         int mid = left + (right - left) / 2;
 
-        mergeSort(arr, left, mid);
-        mergeSort(arr, mid + 1, right);
+        merge_sort(arr, left, mid);
+        merge_sort(arr, mid + 1, right);
 
-        merge(arr, left, mid, right);
+        merge_arrays(arr, left, mid, right);
     }
 }
 
 // Entrada desde archivo (txt)
-void ForTxt() {
+void process_txt_input() {
     string line;
     while (getline(cin, line)) {
         if (line.empty())
@@ -100,7 +100,7 @@ void ForTxt() {
             valores[i] = stod(line);
         }
 
-        mergeSort(valores, 0, N - 1);
+        merge_sort(valores, 0, N - 1);
 
         cout << "\nResultado:\nValores ordenados de mayor a menor:\n";
         for (double val : valores) {
@@ -111,7 +111,7 @@ void ForTxt() {
 }
 
 // Entrada manual
-void Manual() {
+void manual_input() {
     int N;
 
     cout << "Ingrese el número de valores a ordenar: ";
@@ -136,10 +136,10 @@ void Manual() {
 int main() {
     if (isatty(fileno(stdin))) {
         // Entrada manual
-        Manual();
+        manual_input();
     } else {
         // Entrada desde archivo txt
-        ForTxt();
+        process_txt_input();
     }
 
     return 0;
