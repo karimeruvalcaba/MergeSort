@@ -1,4 +1,10 @@
 /*
+ File: main.cpp
+ Description: This program implements the Merge Sort algorithm to sort values
+              in descending order (highest to lowest). It supports two input modes: manual input retrived
+              by the user and input redirection from a .txt file
+
+Authors:
 Carlos Ernesto Soto Alarcón A01747990
 Karime Itzel Ruvalcaba Pérez A01656188
 Sergio Alfonso Casillas Santoyo A01424863
@@ -124,7 +130,7 @@ void manual_input() {
         cin >> valores[i];
     }
 
-    mergeSort(valores, 0, N - 1);
+    merge_sort(valores, 0, N - 1);
 
     cout << "\nResultado:\nValores ordenados de mayor a menor:\n";
     for (double val : valores) {
