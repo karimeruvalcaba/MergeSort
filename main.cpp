@@ -1,4 +1,7 @@
 /*
+ * SonarQube, open source software quality management tool.
+ * Copyright (C) 2008-2013 SonarSource
+ * http://github.com/SonarOpenCommunity/sonar-cxx
  * File: main.cpp
  * Description:
  * This program implements the Merge Sort algorithm to sort values
