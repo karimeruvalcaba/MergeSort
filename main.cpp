@@ -1,5 +1,5 @@
 /*
-* SonarQube, open source software quality management tool.
+ * SonarQube, open source software quality management tool.
  * Copyright (C) 2008-2013 SonarSource
  * http://github.com/SonarOpenCommunity/sonar-cxx
  *
@@ -16,14 +16,6 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with this program; if not, write to the Free Software Foundation,
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
- *
- * Instituto Tecnológico de Monterrey
- * Clase: Análisis y diseño de algoritmos avanzados
- * Profesor: Felipe Castillo Rendón
- * 
- * 
- * Este código está protegido por derechos de autor y solo debe ser usado
- * con fines educativos en el contexto del curso mencionado.
  */
 
 #include <iostream>
