@@ -18,14 +18,9 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  *
  * Instituto Tecnológico de Monterrey
- * Clase: Análisis y diseño de algoritmos avanzados (Gpo 604)
+ * Clase: Análisis y diseño de algoritmos avanzados
  * Profesor: Felipe Castillo Rendón
  * 
- * Este código fue desarrollado como parte de una actividad académica.
- * Integrantes del equipo:
- * - Carlos Ernesto Soto Alarcón (A01747990)
- * - Karime Itzel Ruvalcaba Pérez (A01656188)
- * - Sergio Alfonso Casillas Santoyo (A01424863)
  * 
  * Este código está protegido por derechos de autor y solo debe ser usado
  * con fines educativos en el contexto del curso mencionado.
